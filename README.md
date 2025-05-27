@@ -48,7 +48,7 @@ Saídas incluem estatísticas, gráfico, acurácia, matriz de confusão e predi�
 
 Vídeo de Apresentação
 
-https://youtu.be/R6EPhJaAvKI?si=ZV8PXSQyT1aObMOV
+Acesse:  https://youtu.be/R6EPhJaAvKI?si=ZV8PXSQyT1aObMOV
 
 Dataset
 
