@@ -11,7 +11,7 @@ O notebook inclui:
 - Matriz de confusão, acurácia e exemplo de predição.
 
 ## Como Reproduzir
-1. Acesse o notebook no Google Colab: [INSIRA O LINK DO NOTEBOOK NO COLAB].
+1. Acesse o notebook no Google Colab: (https://colab.research.google.com/drive/1_ep-6UFDi-o44fCPj55p9JkHs10rRRzR?usp=sharing).
 2. Configure a API do Kaggle para baixar o dataset ou faça upload do arquivo `A - Jogos.csv`:
    - Baixe o dataset em [https://www.kaggle.com/datasets/danilosoares/arena-corinthians](https://www.kaggle.com/datasets/danilosoares/arena-corinthians).
    - No Colab, clique no ícone de pasta (📁) e faça upload do arquivo `A - Jogos.csv`.
