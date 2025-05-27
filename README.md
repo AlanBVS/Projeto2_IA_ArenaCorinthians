@@ -1,26 +1,63 @@
-# Projeto 2 - Inteligência Artificial
+Projeto 2 - Inteligência Artificial
+Sobre
+Este projeto cria uma pipeline de aprendizado de máquina para prever resultados de partidas na Arena Corinthians, usando o dataset do Kaggle. O notebook, executado no Google Colab, inclui análise de dados, transformações, treinamento de um modelo Random Forest, avaliação e predição.
+Observação: O projeto analisa 321 partidas, codifica times visitantes, remove dados faltantes, divide o dataset em treino, validação e teste, e prevê se o Corinthians vence, empata ou perde, com acurácia de cerca de 60-70%.
+Requisitos
 
-Este projeto implementa uma pipeline de aprendizado de máquina para prever resultados de partidas no estádio Arena Corinthians, usando o dataset do Kaggle.
+Ambiente: Google Colab (já inclui bibliotecas).
+Bibliotecas: pandas, numpy, scikit-learn, matplotlib, seaborn.
+Dataset: A - Jogos.csv (Arena Corinthians).
+Opcional: kaggle.json para baixar via API.
 
-## Descrição
-O notebook inclui:
-- Carregamento e análise estatística do dataset.
-- Transformações (codificação do time visitante e remoção de valores ausentes).
-- Divisão em subconjuntos (treino, validação, teste).
-- Treinamento e avaliação de um modelo Random Forest.
-- Matriz de confusão, acurácia e exemplo de predição.
+Como Reproduzir
 
-## Como Reproduzir
-1. Acesse o notebook no Google Colab: (https://colab.research.google.com/drive/1_ep-6UFDi-o44fCPj55p9JkHs10rRRzR?usp=sharing).
-2. Configure a API do Kaggle para baixar o dataset ou faça upload do arquivo `A - Jogos.csv`:
-   - Baixe o dataset em [https://www.kaggle.com/datasets/danilosoares/arena-corinthians](https://www.kaggle.com/datasets/danilosoares/arena-corinthians).
-   - No Colab, clique no ícone de pasta (📁) e faça upload do arquivo `A - Jogos.csv`.
-3. Execute as células sequencialmente (**Runtime > Run all**).
-4. Bibliotecas necessárias: pandas, numpy, scikit-learn, matplotlib, seaborn (já inclusas no Colab).
+Abrir o Notebook:
 
-## Vídeo de Apresentação
-[]
+Acesse: https://colab.research.google.com/drive/1_ep-6UFDi-o44fCPj55p9JkHs10rRRzR?usp=sharing.
 
-## Dataset
-- Fonte: [Arena Corinthians](https://www.kaggle.com/datasets/danilosoares/arena-corinthians)
-- Licença: Copyright dos autores
+
+Obter o Dataset:
+
+Via API do Kaggle:
+Baixe kaggle.json em Kaggle > Settings > API.
+No Colab, execute:!pip install kaggle
+from google.colab import files
+files.upload()  # Upload kaggle.json
+!mkdir -p ~/.kaggle
+!cp kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+!kaggle datasets download -d danilosoares/arena-corinthians --force
+!unzip arena-corinthians.zip
+
+
+
+
+Upload Manual:
+Baixe A - Jogos.csv em Kaggle.
+No Colab, clique na pasta (📁) e faça upload do arquivo.
+
+
+
+
+Executar:
+
+Clique em Runtime > Run all ou execute célula por célula (Shift + Enter).
+Saídas incluem estatísticas, gráfico, acurácia, matriz de confusão e predição.
+
+
+
+Vídeo de Apresentação
+
+https://youtu.be/R6EPhJaAvKI?si=ZV8PXSQyT1aObMOV
+
+Dataset
+
+Fonte: Arena Corinthians
+Licença: Copyright dos autores
+Conteúdo: 321 partidas, com gols, time visitante, público, etc.
+
+Autor
+
+Nome: Alan Bruno
+
+
